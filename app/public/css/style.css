@@ -1,0 +1,37 @@
+body { 
+    padding-top: 70px; 
+}
+
+.modal-body > img {
+    max-height: 300px;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+#match-name {
+    text-align: center;
+}
+
+.input-panel {
+    padding: 10px 20px;
+}
+
+.question-panel {
+    width: 100%;
+    min-width: 450px;
+    padding-bottom: 10px;
+}
+
+.radio-inline {
+    width: calc(20% - 5px);
+    text-align: center;
+}
+
+.radio-inline+.radio-inline {
+    margin: 0;
+}
+
+#submit-btn {
+    margin-bottom: 40px;
+}

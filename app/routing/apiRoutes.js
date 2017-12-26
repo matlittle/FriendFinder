@@ -5,14 +5,15 @@ module.exports = (app) => {
     app.post("/api/survey", (req, res) => {
         const surveyResult = req.body;
 
-        console.log("surveyResult =================");
-        console.log(surveyResult);
-
         const match = findBestMatch(surveyResult.scores);
 
         friends.push(surveyResult)
 
         res.json(match);
+    });
+
+    app.get("/api/friends", (req, res) => {
+        res.json(friends);
     });
 }
 

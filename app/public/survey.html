@@ -10,119 +10,267 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://bootswatch.com/3/superhero/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <div>
-    <h5>Question 1</h5>
-    <form class="question-form">
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Neutral</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Agree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Agree</label>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li class="active">
+          <a href="#">Survey<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container">
+  
+    <div class="page-header">
+      <h1>Survey</h1>
+    </div>
+
+    <form>
+      <div class="panel panel-default input-panel">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" id="name-input" required>
+          <label>Photo URL</label>
+          <input type="text" class="form-control" id="photo-input" required>
+        </div>
+      </div>
+
+      <div class="panel panel-default question-panel">
+        <div class="form-group question-form" id="question1">
+          <div class="panel-heading">
+            <h5>Dating surveys make you uncomfortable.</h5>
+          </div>
+          <label class="radio-inline">
+            <input type="radio" name="question1" value="1">Strongly Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question1" value="2">Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question1" value="3">Neutral</label>
+          <label class="radio-inline">
+            <input type="radio" name="question1" value="4">Agree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question1" value="5">Strongly Agree</label>
+        </div>
+      </div>
+
+      <div class="panel panel-default question-panel">
+        <div class="form-group question-form" id="question2">
+          <div class="panel-heading">
+            <h5>You spend a lot of time outdoors.</h5>
+          </div>
+          <label class="radio-inline">
+            <input type="radio" name="question2" value="1">Strongly Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question2" value="2">Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question2" value="3">Neutral</label>
+          <label class="radio-inline">
+            <input type="radio" name="question2" value="4">Agree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question2" value="5">Strongly Agree</label>
+        </div>
+      </div>
+
+      <div class="panel panel-default question-panel">
+        <div class="form-group question-form" id="question3">
+          <div class="panel-heading">
+            <h5>You're always listening to music.</h5>
+          </div>
+          <label class="radio-inline">
+            <input type="radio" name="question3" value="1">Strongly Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question3" value="2">Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question3" value="3">Neutral</label>
+          <label class="radio-inline">
+            <input type="radio" name="question3" value="4">Agree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question3" value="5">Strongly Agree</label>
+        </div>
+      </div>
+
+      <div class="panel panel-default question-panel">
+        <div class="form-group question-form" id="question4">
+          <div class="panel-heading">
+            <h5>Star Wars is superior to Star Trek.</h5>
+          </div>
+          <label class="radio-inline">
+            <input type="radio" name="question4" value="1">Strongly Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question4" value="2">Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question4" value="3">Neutral</label>
+          <label class="radio-inline">
+            <input type="radio" name="question4" value="4">Agree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question4" value="5">Strongly Agree</label>
+        </div>
+      </div>
+
+      <div class="panel panel-default question-panel">
+        <div class="form-group question-form" id="question5">
+          <div class="panel-heading">
+            <h5>You spend lots of time on social media.</h5>
+          </div>
+          <label class="radio-inline">
+            <input type="radio" name="question5" value="1">Strongly Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question5" value="2">Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question5" value="3">Neutral</label>
+          <label class="radio-inline">
+            <input type="radio" name="question5" value="4">Agree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question5" value="5">Strongly Agree</label>
+        </div>
+      </div>
+
+      <div class="panel panel-default question-panel">
+        <div class="form-group question-form" id="question6">
+          <div class="panel-heading">
+            <h5>You are very frugal.</h5>
+          </div>
+          <label class="radio-inline">
+            <input type="radio" name="question6" value="1">Strongly Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question6" value="2">Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question6" value="3">Neutral</label>
+          <label class="radio-inline">
+            <input type="radio" name="question6" value="4">Agree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question6" value="5">Strongly Agree</label>
+        </div>
+      </div>
+
+      <div class="panel panel-default question-panel">
+        <div class="form-group question-form" id="question7">
+          <div class="panel-heading">
+            <h5>You enjoy warm weather over the cold.</h5>
+          </div>
+          <label class="radio-inline">
+            <input type="radio" name="question7" value="1">Strongly Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question7" value="2">Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question7" value="3">Neutral</label>
+          <label class="radio-inline">
+            <input type="radio" name="question7" value="4">Agree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question7" value="5">Strongly Agree</label>
+        </div>
+      </div>
+
+      <div class="panel panel-default question-panel">
+        <div class="form-group question-form" id="question8">
+          <div class="panel-heading">
+            <h5>You'd rather read than watch Netflix.</h5>
+          </div>
+          <label class="radio-inline">
+            <input type="radio" name="question8" value="1">Strongly Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question8" value="2">Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question8" value="3">Neutral</label>
+          <label class="radio-inline">
+            <input type="radio" name="question8" value="4">Agree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question8" value="5">Strongly Agree</label>
+        </div>
+      </div>
+
+      <div class="panel panel-default question-panel">
+        <div class="form-group question-form" id="question9">
+          <div class="panel-heading">
+            <h5>You enjoy beer more than wine.</h5>
+          </div>
+          <label class="radio-inline">
+            <input type="radio" name="question9" value="1">Strongly Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question9" value="2">Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question9" value="3">Neutral</label>
+          <label class="radio-inline">
+            <input type="radio" name="question9" value="4">Agree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question9" value="5">Strongly Agree</label>
+        </div>
+      </div>
+
+      <div class="panel panel-default question-panel">
+        <div class="form-group question-form" id="question10">
+          <div class="panel-heading">
+            <h5>You're a coding ninja.</h5>
+          </div>
+          <label class="radio-inline">
+            <input type="radio" name="question10" value="1">Strongly Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question10" value="2">Disagree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question10" value="3">Neutral</label>
+          <label class="radio-inline">
+            <input type="radio" name="question10" value="4">Agree</label>
+          <label class="radio-inline">
+            <input type="radio" name="question10" value="5">Strongly Agree</label>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-primary" id="submit-btn">Submit Survey</button>
+      </div>
     </form>
+  </div>
+  <!-- /.container -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content" id="missing-info">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Missing Fields</h4>
+        </div>
+        <div class="modal-body">
+          <p>Please make sure to complete the entire survey.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+      <div class="modal-content" id="found-match">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Your Best Match</h4>
+        </div>
+        <div class="modal-body">
+          <img src="">
+          <h3 id="match-name"></h3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
   </div>
 
-  <div>
-    <h5>Question 2</h5>
-    <form class="question-form">
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Neutral</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Agree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Agree</label>
-    </form>
-  </div>
 
-  <div>
-    <h5>Question 3</h5>
-    <form class="question-form">
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Neutral</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Agree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Agree</label>
-    </form>
-  </div>
-
-  <div>
-    <h5>Question 4</h5>
-    <form class="question-form">
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Neutral</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Agree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Agree</label>
-    </form>
-  </div>
-
-  <div>
-    <h5>Question 5</h5>
-    <form class="question-form">
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Neutral</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Agree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Agree</label>
-    </form>
-  </div>
-
-  <div>
-    <h5>Question 6</h5>
-    <form class="question-form">
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Neutral</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Agree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Agree</label>
-    </form>
-  </div>
-
-  <div>
-    <h5>Question 7</h5>
-    <form class="question-form">
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Neutral</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Agree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Agree</label>
-    </form>
-  </div>
-
-  <div>
-    <h5>Question 8</h5>
-    <form class="question-form">
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Neutral</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Agree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Agree</label>
-    </form>
-  </div>
-
-  <div>
-    <h5>Question 9</h5>
-    <form class="question-form">
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Neutral</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Agree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Agree</label>
-    </form>
-  </div>
-
-  <div>
-    <h5>Question 10</h5>
-    <form class="question-form">
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Disagree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Neutral</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Agree</label>
-      <label class="radio-inline"><input type="radio" name="optradio">Strongly Agree</label>
-    </form>
-  </div>
+  <script src="javascript/app.js"></script>
 
 </body>
 
